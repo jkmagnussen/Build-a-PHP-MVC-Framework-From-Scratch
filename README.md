@@ -1,69 +1,55 @@
-Build a Complete Registration and Login System using PHP MVC:
+Write PHP Like a Pro: Build a PHP MVC Framework From Scratch:
 
 Browser accessibility:
 
 <VirtualHost \*:80>
-DocumentRoot "/Users/josephmagnussen/Documents/Development/Udemy/Registration_Login_PHP_MVC/public"
-ServerName phpmvc.test
+DocumentRoot "/Users/josephmagnussen/Documents/Development/Udemy/Build_PHP_MVC_Framework/public"
+ServerName build-mvc.test
 </VirtualHost>
+
+Database - buildMVCfromScratch
+
+Course director: Dave Hollingworth (Udemy)
+Student - Joe Karl Magnussen
 
 Course goals:
 
-Learn the basic concepts, tools and functions that you will need for user authentication using a PHP MVC framework. Add registration, login, remember me, account activation, password reset by email and more using the PHP MVC framework.
+Learn the basic concepts of using a model-view-controller framework that will make your PHP projects faster, easier to write and maintain, and more secure.
 
-course link: https://www.udemy.com/course/php-mvc-login/learn/lecture/5321752?start=15#overview
+Learn to Structure your PHP Code Like a Professional by Building a PHP MVC Framework from Scratch.
 
-Course director: Dave Hollingworth (Udemy)
+Model-view-controller (MVC) pattern concepts
+Build an MVC framework in PHP from scratch
+Separate application code from presentation code
+Use namespaces and an autoloader to load classes automatically
 
-Student - Joe Karl Magnussen
+Take your PHP Projects to the Next Level
 
-content:
+Learning how to use an MVC framework puts a very powerful tool at your fingertips. Most commercial websites and web applications written in PHP use some sort of framework, and the MVC pattern is the most popular type of framework in use.
 
-Learn the basic concepts, tools and functions that you will need for user authentication using a PHP MVC framework.
-
-Add registration and login to the PHP MVC framework we built on the "Build a PHP MVC Framework From Scratch" course.
-
-Let new users sign up and log in
-Store passwords securely in the database
-Restrict content to logged-in users only
-Use sessions for handling logins
-Use cookies to optionally remember the user's login
-Allow users to securely reset their own passwords
-
-Build Registration and Login using Models, Views and Controllers
-
-Most websites and web applications need user authentication. Once users sign up to your site, you can tailor content specifically to them, and restrict content to logged-in users only.
-
-By developing user authentication using an MVC framework, your code will be easier to write and maintain.
-
-All the concepts you need to know to understand why the system is developed the way it is are explained in detail.
+The gap between knowing PHP and using a framework can be huge. This course bridges that gap. By writing your own framework from scratch, you'll gain an understanding of just how each component works. Frameworks like Laravel, Symfony and CodeIgniter all use the MVC pattern, so understanding how an MVC framework is put together will give you a strong background to more easily learn frameworks such as these.
 
 Content and Overview
 
-I designed this course to follow on from the Write PHP Like a Pro: Build a PHP MVC Framework From Scratch course. At the end of that course you had built your own PHP MVC framework. If you want to add user registration and login to that framework, then this course will cover all you need to know, starting from where that course left off.
+I designed this course to be easily understood by programmers who know PHP but don't know how to use a framework. Are you putting database code and HTML in the same PHP script? Want to know why this is a bad idea? Want to know how to do it better?
 
-Starting with the basic concepts of authentication, this course will take you through all the steps needed to build a complete registration and login system, one piece at a time.
+Starting with the basic concepts of MVC frameworks, this course will take you through all the steps needed to build a complete MVC framework, a piece at a time.
 
-Beginning with the PHP MVC framework from the previous course, each lecture explains what you're going to add to the code and why, building up the project step by step. At the end of this course, you'll have built a complete registration and login system using the PHP MVC framework, ready to use in your own projects.
+Beginning with a single PHP script, each lecture explains what you're going to add to the code and why, building up the framework step by step. At the end of this course, you'll have built a complete MVC framework in PHP, ready to use in your own projects.
 
-Complete with working source code at every stage, you'll be able to work alongside the instructor and will receive a verifiable certificate of completion upon finishing the course. Also, at all times throughout the course you have access to the instructor to ask for help with any topic related to the course.
+Complete with working source code at every stage, you'll be able to work alongside the instructor and will receive a verifiable certificate of completion upon finishing the course.
 
 What you’ll learn
-Let new users sign up for a new account
-Validate the users' registration data, both on the server and in the browser
-Store passwords securely in the database
-Allow users to log in using their email and password
-Restrict content to logged-in users only
-Use sessions for handling logins
-Use cookies to optionally remember the user's login
-Allow users to securely reset their own passwords when they forget them
-Let users update their own profile details
-Use a CSS UI framework to easily add styling to a project
+Separate application code from presentation code
+Organise your PHP code into models, views and controllers in an MVC framework
+Use namespaces and an autoloader to load PHP classes automatically
+Use the Composer tool to manage third-party package dependencies and autoloading
+Handle errors and exceptions in PHP and display more or less error detail based on the environment
+Understand how MVC frameworks work, making it easier to learn an existing framework like Laravel or CodeIgniter
 Are there any course requirements or prerequisites?
-You need to have taken the "Write PHP Like a Pro: Build a PHP MVC Framework From Scratch" course
-You should already be familiar with the basics of PHP, HTML, CSS and JavaScript
-You should be comfortable installing software on your computer
-You need to be familiar with the model - view - controller (MVC) pattern
+You should already be familiar with PHP and HTML.
+You should be comfortable installing software on your computer - in the first section we'll be installing a web server.
 Who this course is for:
-This course is for those who want to add authentication to the PHP MVC framework
-This course is NOT for you if you're not familiar with MVC
+This PHP MVC course is meant for those who already know PHP but want to know how they can improve their code by using a framework. This course is not for you if you don't already know PHP.
+The gap between learning PHP and using a framework can be large - if you've just learnt PHP and you're wondering what the next step might be, this course is for you.
+course link: https://www.udemy.com/course/php-mvc-from-scratch/learn/lecture/4446716?start=15#overview
