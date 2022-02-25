@@ -20,7 +20,7 @@ class Router{
     protected $params = [];
 
     /** 
-     * Add a route to the routing table
+     * Add a route to the routing tablee
      * 
      * @param string $route The route URL 
      * @param array $params Paramiters (controller, action, etc.)
