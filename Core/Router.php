@@ -96,4 +96,10 @@ class Router{
       public function getParams(){
           return $this->params;
       }
+
+      public function dispatch($url){
+          if($this->match($url)){
+              
+          }
+      }
 }
