@@ -137,7 +137,7 @@ class Router{
        * Convert the new string with hyphens to camelCase,
        * e.g. add-new => addNew
        * 
-       * @param string $string The string to convert 
+       * @param string $string The string to convertt
        * 
        * @return string 
        */
