@@ -125,7 +125,7 @@ class Router{
        * Convert the string with hyphens to StudlyCaps.
        * e.g. post-authors => PostAuthors
        * 
-       * @param string $string The string to convert 
+       * @param string $string The string to convertt
        * 
        * @return string
        */
