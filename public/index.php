@@ -9,7 +9,7 @@
  // echo 'Requested URL = " '. $_SERVER['QUERY_STRING'] . '"';
 
 /** 
-* Routing 
+* Routingg
 */
 
 require '../Core/Router.php';
