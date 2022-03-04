@@ -1,4 +1,4 @@
-<? php 
+<?php 
 
 /** 
  * Posts controller 
@@ -6,7 +6,7 @@
  * PHP version 5.4 + 
  */
 
- class Posts {
+class Posts {
      /** 
       * Show the index page 
       * @return void 
