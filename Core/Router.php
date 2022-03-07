@@ -14,7 +14,7 @@ class Router{
      */
     protected $routes = []; // routing table 
 
-    /** parameters from the matched routeee
+    /** parameters from the matched route
      * @var array
      */
     protected $params = [];
