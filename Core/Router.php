@@ -12,7 +12,7 @@ class Router{
      * Associative array of routes (the routing table)
      * @var array
      */
-    protected $routes = []; // routing tablee
+    protected $routes = []; // routing table
 
     /** parameters from the matched routee
      * @var array
