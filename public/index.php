@@ -12,11 +12,24 @@
 * Routingg
 */
 
-require '../App/Controllers/Posts.php';
+// require '../App/Controllers/Posts.php';
 
-require '../Core/Router.php';
 
-$router = new Router();
+/** 
+ * Autoloader 
+ */
+spl_autoload_register(function ($class) {
+    $root = dirname(__DIR__); //get the parent directory 
+    $file = $root . '/' . str_replace('\\', '/', $class) . '.php';
+    if(is_readable($file)){
+        require $root . '/' . str_replace('\\', '/', $class) . '.php';
+    }
+});
+
+// Routing
+// require '../Core/Router.php';
+
+$router = new Core\Router();
 
 // echo get_class($router);
 
