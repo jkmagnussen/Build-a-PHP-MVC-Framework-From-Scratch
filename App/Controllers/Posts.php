@@ -3,7 +3,7 @@
 namespace App\Controllers;
 
 /** 
- * Posts controller 
+ * Posts controllerR 
  * 
  * PHP version 5.4 + 
  */
