@@ -10,7 +10,7 @@ namespace App\Controllers;
 
 class Posts extends Core\Controller{
      /** 
-      * Show the index page 
+      * Show the index pageE
       * @return void 
       */
       public function index(){
