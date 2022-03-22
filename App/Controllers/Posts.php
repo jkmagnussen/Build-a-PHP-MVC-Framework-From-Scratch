@@ -20,7 +20,7 @@ class Posts extends Core\Controller{
       }
 
       /** 
-      * Show the add new page
+      * Show the add new pagee
       * @return void 
       */
       public function addNew(){
