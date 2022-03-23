@@ -65,29 +65,21 @@ class Router{
      */
 
      public function match($url){
-        //  foreach($this->routes as $route => $params){
-        //      if ($url == $route){
-        //          $this->params = $params;
-        //          return true;
-        //      }
-        //  }
 
-        // Match to the fixed URL format /controller/action
-        // $reg_exp = "/^(?P<controller>[a-z-]+)\/(?P<action>[a-z-]+)$/";
-
-        foreach($this->routes as $route => $params){
-        if(preg_match($route, $url, $matches)){
-            $params = [];
-
-            foreach($matches as $key => $match){
-                if(is_string($key)){
-                    $params[$key] = $match;
+        foreach ($this->routes as $route => $params) {
+            if (preg_match($route, $url, $matches)) {
+                // Get named capture group values
+                foreach ($matches as $key => $match) {
+                    if (is_string($key)) {
+                        $params[$key] = $match;
+                    }
                 }
+
+                $this->params = $params;
+                return true;
             }
-            $this->params = $params;
-            return true;
         }
-        }
+
          return false;
      } 
 
@@ -104,21 +96,21 @@ class Router{
         $url = $this->removeQueryStringVariables($url);
         
           if($this->match($url)){
-              $controller = $this->params['controller'];
-              $controller = $this->convertToStudlyCaps($controller);
-              $controller = "App\Controllers\\$controller";
+                $controller = $this->params['controller'];
+                $controller = $this->convertToStudlyCaps($controller);
+                $controller = "App\Controllers\\$controller";
               
               if(class_exists($controller)){
-                  $controller_object = new $controller();
+                  $controller_object = new $controller($this->params);
 
                   $action = $this->params['action'];
                   $action = $this->convertToCamelCase($action);
 
-                  if(is_callable([$controller_object, $action])){
+                  if (preg_match('/action$/i', $action) == 0) {
                       $controller_object->$action();
-                  }else{
-                      echo "Method $action (in controller $controller) not found";
-                  }
+                    } else {
+                        throw new \Exception("Method $action in controller $controller cannot be called directly - remove the Action suffix to call this method");
+                    }
               }else{
                   echo "Controller class $controller not found";
               }
