@@ -36,4 +36,4 @@ class Posts extends \Core\Controller{
           echo '<p>Route parameters: <pre>' . 
           htmlspecialchars(print_r($this->route_params, true)) . '</pre></p>';
       }
- }
+ } 

@@ -9,11 +9,10 @@
  // echo 'Requested URL = " '. $_SERVER['QUERY_STRING'] . '"';
 
 /** 
-* Routingg
+* Routing
 */
 
 // require '../App/Controllers/Posts.php';
-
 
 /** 
  * Autoloader 
@@ -40,7 +39,7 @@ $router->add('posts', ['controller' => 'Posts', 'action' => 'index']);
 
 $router->add('{controller}/{action}');
 $router->add('{controller}/{id:\d+}/{action}');
-
+$router->add('admin/{controller}/{action}', ['namespace' => 'Admin']);
 
 // Display the routing table 
 // echo '<pre>';
