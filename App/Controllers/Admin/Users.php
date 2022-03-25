@@ -3,7 +3,7 @@
 namespace App\Controllers\Admin;
 
 /**
-** User admin controller 
+** User admin controllerr
 ** PHP version 5.4 + 
 */
 class Users extends \Core\Controller{
