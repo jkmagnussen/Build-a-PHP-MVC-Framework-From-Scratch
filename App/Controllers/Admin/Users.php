@@ -9,7 +9,7 @@ namespace App\Controllers\Admin;
 class Users extends \Core\Controller{
     
     /**
-    * Before filter 
+    * Before filterr
     * @return void 
     */
     protected function before(){
