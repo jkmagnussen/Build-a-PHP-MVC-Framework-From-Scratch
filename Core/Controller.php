@@ -3,7 +3,7 @@
 namespace Core;
 
 /** 
- * Base controller 
+ * Base controllerr
  * 
  * PHP version 5.4 + 
  */
