@@ -8,8 +8,6 @@ require '../vendor/autoload.php';
 
 $router = new Core\Router();
 
-// echo get_class($router);
-
 // Add the routes 
 $router->add('', ['controller' => 'Home', 'action' => 'index']);
 $router->add('posts', ['controller' => 'Posts', 'action' => 'index']);
