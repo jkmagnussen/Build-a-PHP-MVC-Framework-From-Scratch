@@ -1,2 +1,4 @@
-# Ignore the vendor folder 
+# Ignore the vendor folder
+ 
 /vendor
+/config.php
