@@ -1,5 +1,7 @@
 <?php
 
+include "config.php";
+
 /**
  * Check the database connection details are ok.
  *
@@ -11,15 +13,12 @@
 /**
  * Database connection data
  */
-$host = "localhost";
-$db_name = "build_mvc";
-$user = "root";
-$password = "";
 
 /**
  * Create a connection
  */
-$conn = new mysqli($host, $user, $password, $db_name);
+
+$con = new PDO('mysql:host='.DB_HOST.'dbname='.DB_NAME.'port=80', DB_USER, DB_PASS);
 
 /**
  * Check the connection

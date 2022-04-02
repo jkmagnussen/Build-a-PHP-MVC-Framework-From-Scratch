@@ -4,35 +4,7 @@
 /**
  * Twig
  */
-require_once dirname(__DIR__) . '/vendor/autoload.php';
-
-/** 
- * Front controller 
- * 
- * PHP version 5.4
- */
-
- // echo 'Requested URL = " '. $_SERVER['QUERY_STRING'] . '"';
-
-/** 
-* Routing
-*/
-
-// require '../App/Controllers/Posts.php';
-
-/** 
- * Autoloader 
- */
-// spl_autoload_register(function ($class) {
-//     $root = dirname(__DIR__); //get the parent directory 
-//     $file = $root . '/' . str_replace('\\', '/', $class) . '.php';
-//     if(is_readable($file)){
-//         require $root . '/' . str_replace('\\', '/', $class) . '.php';
-//     }
-// });
-
-// Routing
-// require '../Core/Router.php';
+require '../vendor/autoload.php';
 
 $router = new Core\Router();
 
