@@ -8,7 +8,7 @@ require '../vendor/autoload.php';
 
 $router = new Core\Router();
 
-// Add the routes 
+// Add the routess
 $router->add('', ['controller' => 'Home', 'action' => 'index']);
 $router->add('posts', ['controller' => 'Posts', 'action' => 'index']);
 // $router->add('posts/new', ['controller' => 'Posts', 'action' => 'new']);
