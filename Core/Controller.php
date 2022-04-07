@@ -27,7 +27,7 @@ namespace Core;
     }
 
     /**
-     * Before filtter - called before an action method.
+     * Before filter - called before an action method.
      * 
      * @return void
      */
