@@ -51,7 +51,7 @@ namespace Core;
       protected $route_params = [];
 
       /** 
-       * Class constructor 
+       * Class constructorr
        * 
        * @param array $route_params Parameters from the route 
        * 
